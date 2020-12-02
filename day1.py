@@ -1,4 +1,4 @@
-def readFile():
+def read_file():
     number_list = []
 
     file = open("input1.1.txt", "r")
@@ -30,7 +30,7 @@ def three_sum_to(number, num_list, starting_index):
 
 
 def main():
-    num_list = readFile()
+    num_list = read_file()
 
     result = two_sum_to(2020, num_list, 0)
     print(result[:])
