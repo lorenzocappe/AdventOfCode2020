@@ -57,9 +57,7 @@ class Password:
         return self.word+" "+self.letter+" "+str(self.min)+"-"+str(self.max)
 
 
-def main():
-    line_list = read_file()
-
+def compute_password_list(line_list):
     password_list = []
     for i in range(len(line_list)):
         temp = line_list[i].split()
@@ -71,6 +69,12 @@ def main():
         word = temp[2].rstrip()
 
         password_list.append(Password(letter, min, max, word))
+    return password_list
+
+
+def main():
+    line_list = read_file()
+    password_list = compute_password_list(line_list)
 
     number_valid_part1 = 0
     number_valid_part2 = 0
