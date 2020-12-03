@@ -6,7 +6,7 @@ def read_file():
         line = file.readline()
         if not line:
             break
-        list.append(line)
+        list.append(line.strip('\n'))
     file.close()
 
     return list
@@ -66,7 +66,7 @@ def compute_password_list(line_list):
         min = int(interval[0])
         max = int(interval[1])
         letter = temp[1][0]
-        word = temp[2].rstrip()
+        word = temp[2]
 
         password_list.append(Password(letter, min, max, word))
     return password_list
