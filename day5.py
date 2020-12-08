@@ -1,7 +1,7 @@
 def read_file():
     line_list = []
 
-    file = open("input5.1.txt", "r")
+    file = open("input5.txt", "r")
     while True:
         line = file.readline()
         if not line:
