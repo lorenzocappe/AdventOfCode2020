@@ -73,7 +73,7 @@ def find_earliest_bus_part2(adjusted_input: list):
         temp_input.remove(temp_input[1])
         temp_input.remove(temp_input[0])
         temp_input.insert(0, bus_3)
-        print(temp_input)
+        # print(temp_input)
 
     return temp_input[0][0]
 
